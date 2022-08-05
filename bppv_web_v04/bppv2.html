@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1">
+        <!--FONT ROBOTO-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+        <style type="text/css">@font-face{font-family:'Roboto';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic3CsTYl4BOQ3o.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic-CsTYl4BOQ3o.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic2CsTYl4BOQ3o.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic5CsTYl4BOQ3o.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic1CsTYl4BOQ3o.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic0CsTYl4BOQ3o.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic6CsTYl4BO.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfCRc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfABc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfCBc4AMP6lbBP.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfCxc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:900;font-display:swap;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+        <!--END FONT-->
+
+        <!-- PAGE settings -->
+        <link rel="icon" href="https://res.cloudinary.com/unmc/image/upload/v1618870187/iEXCEL_Favicon_vdbleh.ico">
+        <title>iEXCEL | BPPV</title>
+        <meta name="description" content="BPPV">
+        <meta name="keywords" content="BPPV">
+        <meta
+        name="author" content="BPPV">
+        <!-- CSS dependencies -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="wireframe.css">
+        <link rel="stylesheet" href="https://res.cloudinary.com/unmc/raw/upload/v1658938359/bppv_wireframe_layout.css">
+        <style>
+            h1.intro-text {
+                font-size: clamp(1.5rem, 8vw - 2rem, 3rem) !important;
+            }
+
+            html, body, h1,p, h2, h4, h5 {font-family: 'Roboto', sans-serif!important;}
+
+            a#hideControlsButton {min-width:169px;}
+
+            div#center-canvas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+a.btn {cursor:pointer;}
+
+div.fw-400 {font-weight:400;}
+
+#box-slider {justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 150px;}
+
+    .bg-black {background-color:#272425!important;}
+
+    .bg-teal {background-color:#303b41!important;}
+
+    #eye_viewer {height:225px;}
+
+    .fw-600 {font-weight:600;}
+
+    .bg-lightgray {background-color:#f7fafc!important;}
+
+    .clamp-font {font-size:clamp(1.1rem, -0.5vw + 1.3rem, 1rem)!important;}
+
+    #card-space { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.bg-lightergray {font-color:#e2e8f0!important;}
+
+#resetButton{min-width:224px!important;}
+
+#hideControlsButton {min-width:224px!important;}
+
+/* #left-card-space {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;} */
+        </style>
+    </head>
+
+    <body
+        class="text-center bg-dark">
+
+        <!--Dheeraj's scripts for THREE JS BEGIN-->
+        <script src="./three/libs/ammo.wasm.js"></script>
+        <script src="./three/libs/ammo.js"></script>
+        <!--Dheeraj's scripts for THREE JS END-->
+
+        <div class="py-1 mb-3 bg-black">
+            <div class="container-fluid" style="max-width:2000px;">
+              <div class="row">
+                <div class="col-md-12">
+                  <nav class="navbar navbar-light px-1">
+                    <a class="navbar-brand text-primary" href="#">
+                      <img alt="iEXCEL | UNMC" src="https://iexcel-unmc.github.io/img/iexcel-logo.svg" class="d-block img-fluid m-0" width="160" height="32">
+                    </a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="py-2">
+            <div class="container-fluid" style="max-width:2000px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <h4 href="#" class="list-group-item d-flex flex-column justify-content-center align-self-center w-100 my-0 intro-text text-dark fw-bold py-2  font-weight-bold">Diagnosis Mode</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-2">
+            <div class="container-fluid" style="max-width:2000px;">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card text-center shadow">
+                            <div class="card-header text-dark font-weight-bold bg-lightgray">
+                               <span class="clamp-font"> Patient Controls</span></div>
+                            <div id="left-card-space" class="card-body py-4">
+                                <img
+                                class="img-fluid mb-2" width="190" src="https://res.cloudinary.com/unmc/image/upload/v1658935707/Screenshot_2022-07-27_102738_mko6ck.png">
+
+                                <!--SLIDERS PROTOTYPE BEGIN-->
+
+
+                                <div id="box-slider" class="card card-body my-4 rounded fw-600 py-3 shadow-sm text-body bg-lightgray" style="border-radius:5px!important;" >
+                                    <div style="display:flex ;" class=" d-flex flex-row justify-content-center">
+                                      <div class="pr-1">Rotation X </div>
+                                      <input type="range" id="rotX" min="0" max="180" step="1" value="90" class="ml-2">
+                                      <span id="rotXvalue"></span>
+                                    </div>
+                                    <div style="display:flex ;" class="flex-row justify-content-center">
+                                      <div class="pr-1">Rotation Y </div>
+                                      <input type="range" id="rotY" min="0" max="80" step="1" value="40" class="ml-2">
+                                      <span id="rotYvalue"></span>
+                                    </div>
+                                    <div style="display:flex ;" class="  flex-row justify-content-center">
+                                      <div class="flex-row justify-content-center pr-1">Rotation Z </div>
+                                      <input type="range" id="rotZ" min="0" max="80" step="1" value="40" class="ml-2">
+                                      <span id="rotZvalue"></span>
+                                    </div>
+                                  </div>
+                    <!--SLIDERS PROTOTYPE END-->
+
+                    <a id="sitButton" class="btn btn-info d-block w-75 m-auto shadow font-weight-bold border border-secondary btn-lg rounded-pill">Sit up</a>
+                    <br>
+                    <a id="layDownButton" class="btn btn-info my-3 w-75 m-auto shadow font-weight-bold border border-secondary btn-lg rounded-pill">Lay down</a>
+                </div>
+                <div class="card-footer text-muted d-none">
+                    <span class="invisible">2 days ago</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+            <div
+                class="card shadow">
+                <!--img class="card-img-top" src="https://res.cloudinary.com/unmc/image/upload/v1658935420/New_Project_83_lauskj.jpg" alt="Card image cap"-->
+
+
+                <canvas id="threejs-canvas" style="margin:0 0 0 0; padding:0; ">
+                    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+                    <script type="importmap">
+                        {
+                                         "imports": {
+                                           "three": "./three/build/three.module.js"
+                                         }
+                                       }
+                    </script>
+                    <script type="module" src="./bppv_container.js"></script>
+                </canvas>
+
+
+                <div id="center-canvas" class="card-body ml-auto pt-4 bg-lightgray">
+                    <a id="hideControlsButton" class="btn btn-dark mt-2 px-4 shadow font-weight-bold mb-2 border border-secondary mr-4 btn-lg" style="border-radius:25px"><span class="controls-icon"><svg width="24" class="mr-1 mb-1 " height="22" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2028 49.828C12.3653 50.6326 11.0181 50.6162 10.1912 49.7889L6.21213 45.8077C5.38622 44.9815 5.36909 43.6326 6.17341 42.7957L7.74678 41.158C8.5511 40.3208 8.8414 38.7676 8.39997 37.7025L7.27999 34.9986C6.83619 33.9277 5.53528 33.0405 4.37459 33.0171L2.10419 32.9715C0.943158 32.9482 0.0017136 31.9842 0.0017136 30.8146L9.35203e-08 25.1857C-0.000342585 24.0175 0.941094 23.0518 2.10178 23.0284L4.37253 22.9828C5.53356 22.9595 6.83725 22.0665 7.27828 21.001L8.3986 18.2968C8.8424 17.2255 8.54974 15.6778 7.74542 14.8406L6.17205 13.2028C5.36738 12.3653 5.38383 11.0181 6.21111 10.1912L10.1923 6.21213C11.0185 5.38622 12.3674 5.36909 13.2043 6.17341L14.842 7.74678C15.6793 8.5511 17.2324 8.8414 18.2975 8.39997L21.0014 7.27999C22.0723 6.83619 22.9595 5.53528 22.9829 4.37459L23.0285 2.10419C23.0518 0.943158 24.0158 0.0017136 25.1854 0.0017136L30.8143 9.35203e-08C31.9825 -0.000342585 32.9482 0.941094 32.9716 2.10178L33.0172 4.37253C33.0405 5.53356 33.9335 6.83725 34.999 7.27828L37.7032 8.3986C38.7745 8.8424 40.3222 8.54974 41.1594 7.74542L42.7972 6.17204C43.6347 5.36738 44.9819 5.38383 45.8088 6.21111L49.7879 10.1923C50.6138 11.0185 50.6309 12.3674 49.8266 13.2043L48.2532 14.842C47.4489 15.6792 47.1586 17.2324 47.6 18.2975L48.72 21.0014C49.1638 22.0723 50.4647 22.9595 51.6254 22.9829L53.8958 23.0285C55.0568 23.0518 55.9983 24.0158 55.9983 25.1854L56 30.8143C56.0003 31.9825 55.0589 32.9482 53.8982 32.9716L51.6275 33.0172C50.4664 33.0405 49.1627 33.9335 48.7217 34.999L47.6014 37.7032C47.1576 38.7745 47.4503 40.3222 48.2546 41.1594L49.828 42.7972C50.6326 43.6347 50.6162 44.9819 49.7889 45.8088L45.8077 49.7879C44.9815 50.6138 43.6326 50.6309 42.7957 49.8266L41.158 48.2532C40.3207 47.4489 38.7676 47.1586 37.7025 47.6L34.9986 48.72C33.9277 49.1638 33.0405 50.4647 33.0171 51.6254L32.9715 53.8958C32.9482 55.0568 31.9842 55.9983 30.8146 55.9983L25.1857 56C24.0175 56.0003 23.0518 55.0589 23.0284 53.8982L22.9828 51.6275C22.9595 50.4664 22.0665 49.1627 21.001 48.7217L18.2968 47.6014C17.2255 47.1576 15.6778 47.4503 14.8406 48.2546L13.2028 49.828ZM22.762 40.6442C29.7453 43.537 37.7518 40.2207 40.6434 33.2374C43.5362 26.2542 40.2198 18.2477 33.2366 15.356C26.2534 12.4633 18.2468 15.7796 15.3552 22.7628C12.4625 29.7461 15.7788 37.7526 22.762 40.6442V40.6442Z" fill="white"></path>
+                        </svg>
+                        </span>Show Controls<br></a>
+                    <a id="resetButton" class="btn btn-danger mt-2 px-4 shadow font-weight-bold mb-2 border border-light mr-3 btn-lg" style="border-radius:25px"><span class="ds"><svg class="mr-1 mb-1" width="18" height="18" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52.9386 11.0315C48.953 6.19545 43.6001 2.70156 37.4251 1.04637C29.5944 -1.05012 21.4113 0.0251387 14.3874 4.07974C7.3646 8.13435 2.34055 14.6816 0.241198 22.5151C0.14237 22.8834 0.0854896 23.2557 0.000717163 23.626H6.96164C8.69116 17.8193 12.4916 12.9639 17.7603 9.92228C23.2222 6.76769 29.5834 5.93093 35.6784 7.56358C41.1209 9.02165 45.7535 12.304 48.9301 16.8791H36.0714V23.6258H59.6849V0.0117574H52.9382L52.9386 11.0315Z" fill="white"></path>
+                        <path d="M41.9246 50.7971C36.4627 53.9517 30.1016 54.7891 24.0065 53.1565C18.5641 51.6984 13.9314 48.416 10.7548 43.8409H23.6135V37.0942H0V60.7077H6.74671V49.6892C10.7324 54.5253 16.0853 58.0192 22.2602 59.6738C30.0909 61.771 38.2735 60.695 45.298 56.6404C52.3207 52.5858 57.3448 46.0396 59.4436 38.2056C59.5424 37.8373 59.5993 37.465 59.6841 37.0947H52.7237C50.994 42.9014 47.1935 47.7562 41.925 50.7979L41.9246 50.7971Z" fill="white"></path>
+                        </svg>
+                        </span>Reset Position<br></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img id="eye_viewer" class="card-img-top" src="https://res.cloudinary.com/unmc/image/upload/v1658936104/eyes_close_up_g6zrqh.png" alt="Card image cap">
+                <div id="card-space" class="card-body p-4">
+                    <h4 class="card-title text-dark font-weight-bold text-left">Review</h4>
+                    <p class="card-text text-black-50 font-weight-bold text-left clamp-font mb-3">Watch the otoconia movement in the affected vestibular apparatus.
+                    </p>
+                    <!--img class="img-fluid" width="475" src="https://res.cloudinary.com/unmc/image/upload/v1658936346/InnerEar_Wireframe_Images_m4l4ce.png"-->
+
+
+                    <canvas id="threejs-canvas2"></canvas>
+
+                    <a href="file:///C:/Users/nhumphrey/Desktop/Pingendo/New%20Site/Third%20Site/bppvtest.html#" class="btn btn-success d-block w-75 mx-auto shadow font-weight-bold border border-secondary mt-5 mb-3 btn-lg " style="border-radius:25px;">Proceed to treating the patient <span class="continue-icon ml-2 mb-1"><svg width="22
+                " height="22" viewBox="0 0 90 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M88.6409 25.593L68.937 43.8742C67.708 45.0139 65.9173 45.3187 64.3775 44.6487C62.8381 43.9786 61.8429 42.4602 61.8429 40.9397L61.8535 28.1243H5.62461C2.51875 28.1243 0 25.6106 0 22.3411C0 19.0716 2.51875 16.8743 5.62461 16.8743H61.8535V4.21811C61.8535 2.53993 62.8483 1.02066 64.3881 0.350937C65.9268 -0.318611 67.7189 -0.0138071 68.9476 1.12613L88.6514 19.4073C90.4513 21.0755 90.4513 23.9231 88.6409 25.593Z" fill="white"/>
+                        <path d="M88.3018 25.2255L88.3008 25.2265L68.597 43.5076C68.597 43.5076 68.597 43.5076 68.5969 43.5076C67.5138 44.5121 65.9349 44.7811 64.5771 44.1902C63.2101 43.5952 62.3431 42.2506 62.3429 40.9401C62.3429 40.94 62.3429 40.9398 62.3429 40.9397L62.3535 28.1247L62.3539 27.6243H61.8535H5.62461C2.80365 27.6243 0.5 25.3433 0.5 22.3411C0.5 19.3758 2.76588 17.3743 5.62461 17.3743H61.8535H62.3535V16.8743V4.21811C62.3535 2.73881 63.2304 1.39971 64.5875 0.809443L64.5876 0.809412C65.9444 0.219016 67.5247 0.488029 68.6075 1.49267L68.9476 1.12613L68.6075 1.49267L88.3113 19.7738L88.3115 19.774C89.8976 21.244 89.8979 23.7533 88.3018 25.2255Z" stroke="black" stroke-opacity="0.38"/>
+                        </svg></span></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html></div></div></div>
+
+<div class="fixed-bottom bg-primary py-3 bg-black">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0 text-light">© 2022, Board of Regents of the University of Nebraska. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body></html>

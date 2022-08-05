@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>iEXCEL - BPPV</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="icon" href="https://res.cloudinary.com/unmc/image/upload/v1618870187/iEXCEL_Favicon_vdbleh.ico">
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+	<body>
+
+
+
+
+		<script src="./three/libs/ammo.wasm.js"></script>
+		<script src="./three/libs/ammo.js"></script>
+
+		<!-- top DIVISION for iEXCEL logo and prompts  -->
+
+
+		<div class="my_text" id="info">
+
+			<a href="https://www.unmc.edu/iexcel/visualization/index.html" style="color:#b4182d;" target="_blank" rel="noopener">iEXCEL</a> - BPPV
+		</div>
+
+
+
+		<!--ROTATION SLIDERS-->
+		<div class="sliders">
+
+			<div>
+				<div>Rotation X <span id="rotXvalue"></span></div>
+				<input  type="range" id="rotX" min="0" max="180" step ="1" value="90"></input>
+			</div>
+
+
+			<div>
+				<div>Rotation Y <span id="rotYvalue"></span></div>
+				<input  type="range" id="rotY" min="0" max="80" step ="1" value="40"></input>
+			</div>
+
+			<div>
+				<div>Rotation Z <span id="rotZvalue"></span></div>
+				<input  type="range" id="rotZ" min="0" max="80" step ="1" value="40"></input>
+			</div>
+
+			<div>
+				<!--RESET BUTTON-->
+				<button id="resetButton">Reset Rotation (R)</button>
+			</div>
+
+			<div>
+				<!--HIDE/SHOW TRANSFORMATION CONTROLS-->
+				<button id="hideControlsButton">Hide/Show Controls (H)</button>
+			</div>
+
+			<div>
+				<!--LAY DOWN BUTTON-->
+				<button id="layDownButton">Lay Down (L)</button>
+			</div>
+
+			<div>
+				<!--SIT BUTTON-->
+				<button id="sitButton">Sit (S)</button>
+			</div>
+			
+		</div>
+
+
+		
+
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./three/build/three.module.js"
+				}
+			}
+		</script>
+		<script type="module" src="./bppv.js"></script>
+
+	</body>
+</html>

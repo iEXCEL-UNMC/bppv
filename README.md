@@ -1,3 +1,3 @@
-# bppv
+# BPPV
 
 ### Benign paroxysmal positional vertigo

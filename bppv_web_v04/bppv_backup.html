@@ -524,10 +524,11 @@ background-color:red!important;
 }
 */
   </style>
+  <srcipt async src="darkmode.js"></srcipt>
     </head>
 
     <body
-        class="text-center bg-dark">
+        class="dark-mode dark-mode-value-set text-center bg-dark ">
 
         <!--Dheeraj's scripts for THREE JS BEGIN-->
         <script src="./three/libs/ammo.wasm.js"></script>
@@ -670,6 +671,16 @@ background-color:red!important;
       <div class="row">
         <div class="col-md-12 text-center">
           <p class="mb-0 text-light fw-500">© 2022, Board of Regents of the University of Nebraska. All rights reserved.</p>
+          
+          <!--DARK MODE -->
+<p id="dark-mode-toggle" style="display:block;">
+    <a href="#" onclick="event.preventDefault(); toggleDarkMode()">Toggle Dark Mode</a>
+    <a id="clear-dark-mode" href="#" onclick="event.preventDefault(); clearDarkMode()">(Reset)</a>
+
+</p>
+
+<!--END DARK MODE-->
+
         </div>
       </div>
     </div>

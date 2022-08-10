@@ -44,7 +44,7 @@
       touch-action: none;
       display: flex !important;
       flex-direction: column !important;
-      width: 27vmax !important;
+      width: calc(100% - 5vw);
       text-align: center !important;
       justify-content: center !important;
       align-items: center !important;
@@ -195,7 +195,19 @@
       display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items:center;
     }
+
+    .btn-container {
+
+      width:190px;
+    }
+
+    #body-height{height:89vh;
+    
+    }
+
+    #column-height {min-height:839px;}
 
     /* #left-card-space {display: flex;
 flex-direction: column;
@@ -211,7 +223,7 @@ background-color:red!important;
   </style>
 </head>
 
-<body class="text-center bg-dark">
+<body class="text-center bg-blue15">
 
   <!--Dheeraj's scripts for THREE JS BEGIN-->
   <script src="./three/libs/ammo.wasm.js"></script>
@@ -222,7 +234,7 @@ background-color:red!important;
       <div class="container-fluid" style="max-width:2000px;">
         <div class="row">
           <div class="col-md-12">
-            <nav class="navbar navbar-light px-2">
+            <nav class="navbar navbar-light px-2 py-3">
               <a class="navbar-brand text-primary" href="#">
                 <img alt="iEXCEL | UNMC" src="https://iexcel-unmc.github.io/img/iexcel-logo.svg"
                   class="d-block img-fluid m-0" width="145" height="32">
@@ -253,12 +265,12 @@ background-color:red!important;
                 </div>
             </div>
         </div> -->
-  <div class="pt-4 pb-5 bg-blue15">
+  <div id="body-height" class="pt-4 bg-blue15">
     <div class="container-fluid" style="max-width:2000px;">
       <div class="row">
         <div class="col-md-2">
-          <div id="first-column" class="card text-center shadow">
-            <div class="card-header text-dark font-weight-bold bg-lightgray">
+          <div id="first-column" class="card text-center shadow-lg">
+            <div class="card-header text-dark font-weight-bold">
               <span class="clamp-font"> Patient Controls</span></div>
             <div id="left-card-space" class="card-body py-4">
               <img class="img-fluid mb-2" width="190"
@@ -287,7 +299,7 @@ background-color:red!important;
                 </div>
               </div>
               <!--SLIDERS PROTOTYPE END-->
-              <div class="fswsds">
+              <div class="btn-container">
               <a id="sitButton"
                 class="btn btn-dark d-block shadow font-weight-bold border border-secondary btn-lg rounded-pill text-light"><span
                   class="no-margin">Sit up </span><span class="sit-up-icon mb- ml-2"><svg width="16" height="16" viewBox="0 0 250 291" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -312,7 +324,7 @@ background-color:red!important;
         </div>
         <div class="col-md-6">
 
-          <div class="card shadow">
+          <div class="card shadow-lg">
             <!--img class="card-img-top" src="https://res.cloudinary.com/unmc/image/upload/v1658935420/New_Project_83_lauskj.jpg" alt="Card image cap"-->
 
 
@@ -340,7 +352,7 @@ background-color:red!important;
                   </svg>
                 </span>Show Controls<br></a>
               <a id="resetButton"
-                class="btn bg-unmcred mt-2 px-4 shadow font-weight-bold mb-2 border border-light btn-lg text-light"
+                class="btn bg-unmcred mt-2 px-4 shadow font-weight-bold mb-2 border border-secondary btn-lg text-light"
                 style="border-radius:25px"><span class="ds"><svg class="mr-1 mb-1 fa-fw" width="16" height="18"
                     viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -355,7 +367,7 @@ background-color:red!important;
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow">
+          <div id="column-height" class="card shadow-lg">
             <img id="eye_viewer" class="card-img-top"
               src="https://res.cloudinary.com/unmc/image/upload/v1658936104/eyes_close_up_g6zrqh.png"
               alt="Card image cap">
@@ -369,10 +381,10 @@ background-color:red!important;
               <!--img class="img-fluid" width="475" src="https://res.cloudinary.com/unmc/image/upload/v1658936346/InnerEar_Wireframe_Images_m4l4ce.png"-->
 
 
-              <canvas id="threejs-canvas2" style="max-width:815px!important;"></canvas>
+              <canvas id="threejs-canvas2" style="max-width:815px!important;" class="mb-1"></canvas>
 
               <a href="#"
-                class="btn btn-success d-block mx-auto shadow font-weight-bold border border-secondary mt-4 mb-3 btn-lg clamp-font px-4"
+                class="btn btn-success d-block mx-auto shadow font-weight-bold border border-secondary mt-5 mb-3 btn-lg clamp-font px-4"
                 style="border-radius:25px;white-space: nowrap;">Proceed to treating the patient <span
                   class="continue-icon ml-2 mb-1"><svg width="22
                 " height="22" class="fa-fw" viewBox="0 0 90 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -392,7 +404,7 @@ background-color:red!important;
 </div>
 </div>
 </div>
-<footer class="py-2 bg-darkest">
+<footer class="py-2 bg-darkest fixed-bottom">
   <div class=" py-3 bg-darkest">
     <div class="container">
       <div class="row">
